@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,30 +22,126 @@ body {
 }
 
 .conteiner {
-    background-color: #fff;
-}
-h1 {
-    font-weight: 900;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 18px;
+    width: 28.125em;
 }
 
-h2, button, .conteiner a {
-    font-weight: 700;
+.illustration-hero {
+    border-radius: 18px 18px 0 0;
+    width: 100%;
+}
+
+.information_section {
+    padding: 3rem;
+}
+
+h1 {
+    font-size: 1.6875em;
+    font-weight: 900;
+    margin-bottom: 1.5625rem;
+}
+
+h1,
+h2 {
+    color: hsl(223, 47%, 23%);
+}
+
+.plan_list {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.375rem;
+    margin-top: 1.5625rem;
+    width: 100%;
+}
+
+.plan_list a {
+    color: hsl(245, 75%, 52%);
+}
+
+.conteiner_annual_plan {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 9.875rem;
+}
+
+.conteiner_annual_plan h2,
+.conteiner_annual_plan p {
+    font-size: 1em;
+}
+
+button {
+    background-color: hsl(245, 75%, 52%);
+    border: 1px solid hsl(246, 54%, 43%);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px hsl(225, 33%, 65%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    padding: 1rem;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+h2,
+button,
+.conteiner a {
+    font-weight: 900;
 }
 
 p {
     font-size: 1em;
     font-weight: 500;
+    text-align: center;
 }
 
-.plan_list {
-    flex-direction: row;
+.cancel {
+    text-decoration: none;
+}
+
+p,
+.cancel {
+    color: hsl(224, 23%, 55%);
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-device-width: 480px) {
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+
+    .conteiner {
+        width: 20.4375em;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    .information_section {
+        padding: 1.55rem;
+    }
+
+    .plan_list {
+        padding: 1rem;
+    }
+
+    .conteiner_annual_plan {
+        width: 9.25rem;
+    }
+
+    .conteiner_annual_plan h2,
+    .conteiner_annual_plan p,
+    a {
+        font-size: 0.875em;
+    }
+
 }
