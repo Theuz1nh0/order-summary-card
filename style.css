@@ -23,6 +23,7 @@ body {
 
 .conteiner {
     background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 20px 30px hsl(228, 57%, 84%);
     border-radius: 18px;
     width: 28.125em;
 }
@@ -58,14 +59,16 @@ h2 {
 }
 
 .plan_list a {
-    color: hsl(245, 75%, 52%); 
-    transition: all 0.1s linear;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    transition: color 0.1s;
 }
 
 .plan_list a:hover {
     color: hsl(245, 83%, 68%);
     text-decoration: none;
 }
+
 .conteiner_annual_plan {
     flex-direction: row;
     justify-content: space-between;
@@ -94,9 +97,10 @@ button:hover {
     border-color: hsl(244, 46%, 63%);
     transition: all 0.2s;
 }
+
 h2,
 button,
-.conteiner a {
+.cancel {
     font-weight: 900;
 }
 
@@ -108,11 +112,13 @@ p {
 
 .cancel {
     text-decoration: none;
-    transition: all 0.2s;
+    transition: color 0.2s;
 }
+
 .cancel:hover {
     color: hsl(228, 62%, 11%);
 }
+
 p,
 .cancel {
     color: hsl(224, 23%, 55%);
@@ -136,9 +142,11 @@ p,
     .conteiner {
         width: 20.4375em;
     }
+
     h1 {
         font-size: 1.4em;
     }
+
     .information_section {
         padding: 1.55rem;
     }
