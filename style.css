@@ -58,9 +58,14 @@ h2 {
 }
 
 .plan_list a {
-    color: hsl(245, 75%, 52%);
+    color: hsl(245, 75%, 52%); 
+    transition: all 0.1s linear;
 }
 
+.plan_list a:hover {
+    color: hsl(245, 83%, 68%);
+    text-decoration: none;
+}
 .conteiner_annual_plan {
     flex-direction: row;
     justify-content: space-between;
@@ -84,6 +89,11 @@ button {
     width: 100%;
 }
 
+button:hover {
+    background-color: hsl(245, 83%, 68%);
+    border-color: hsl(244, 46%, 63%);
+    transition: all 0.2s;
+}
 h2,
 button,
 .conteiner a {
@@ -98,8 +108,11 @@ p {
 
 .cancel {
     text-decoration: none;
+    transition: all 0.2s;
 }
-
+.cancel:hover {
+    color: hsl(228, 62%, 11%);
+}
 p,
 .cancel {
     color: hsl(224, 23%, 55%);
